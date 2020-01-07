@@ -22,11 +22,9 @@ linktitle: Data Structure Stack
 - Stack의 가장 위 데이터를 가르키는 포인터를 top이라고 한다.
 
 
-<br>
-<img src="/images/stack.png">
-<br>
+![IMAGE](/images/stack1.png)
 
-<hr>
+---
 
 ### 2. 구현
 - Stack class를 구성할 멤버 변수와 멤버 함수를 구성합니다.
