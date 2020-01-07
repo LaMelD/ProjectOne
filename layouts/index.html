@@ -1,0 +1,14 @@
+
+{{ partial "header.html" . }}
+
+<main>
+	<!-- 한 페이지에 Paginate의 수 만큼의 포스트만 보여준다 -->
+	{{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+		{{ range $paginator.Pages }}
+			{{ .Render "summary" }}
+	{{ end }}
+
+	{{ partial "paginator-menu.html" . }}
+</main>
+
+{{ partial "footer.html" . }}

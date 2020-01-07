@@ -1,0 +1,57 @@
+baseURL = "https://lameld.github.io/"
+languageCode = "UTF-8"
+title = "LaMelD's Dev Life"
+
+canonifyurls = true
+paginate = 6
+
+# 요약 정보의 길이를 조절할 수 있다
+summaryLength = 40
+
+googleAnalytics = "UA-153078485-1"
+disqusShortname = ""
+
+SectionPagesMenu = "main"
+
+# use Chroma for syntax highlight
+pygmentsStyle = "native" # other dark style options: vim, fruity, monokai
+
+# enable syntax highlight for code blocks
+pygmentsCodeFences = true
+
+[[menu.main]]
+	name = "Posts"
+	weight = -130
+	identifier = "post"
+	url = "/post/"
+  
+[[menu.main]]
+	name = "Category"
+	weight = -120
+	identifier = "categories"
+	url = "/categories/"
+
+[[menu.main]]
+	name = "Tags"
+	weight = -110
+	identifier = "tag"
+	url = "/tags/"
+
+[taxonomies]
+	category = "categories"
+	group = "groups"
+	series = "series"
+	tag = "tags"
+
+[author]
+	name = "LaMelD"
+
+[params.meta]
+	keywords = ""
+	description = "Personal blog."
+
+[params]
+	email = "wqe014@gmail.com"
+	github = "lameld"
+	instagram = "sangjoooooooooooon"
+	theme_colors = "default-dark"
