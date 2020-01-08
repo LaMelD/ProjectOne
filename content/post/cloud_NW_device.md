@@ -128,7 +128,7 @@ berryz web share ip :: http://121.140.73.126 (공인 IP)
 
 ## 4. 동적 라우팅 프로토콜 - RIP
 
-- RIP : 라우터의 개수가 적은 경로를 최적의 경로로 설정한다. Distance Vector Routing Protocol
+- RIP Protocol : 라우터의 개수가 적은 경로를 최적의 경로로 설정한다. Distance Vector Routing Protocol
 - Routing table의 교환 : 각 라우터는 30sec 마다 공유한다.
 - V1 과 V2
     - V1 : Classful만 지원한다.
@@ -182,3 +182,110 @@ configure terminal
         no auto-summary
         network [알고 있는 네트워크 대역]
 ```
+
+## 5. 동적 라우팅 프로토콜 - EIGRP
+
+- EIGRP Protocol
+    - Cisco에서 만든 Cisco 전용 라우팅 프로토콜
+    - Auto-summary 적용되어 있음
+    - 라우팅 정보 전송을 위해 IP 프로토콜 88번 사용
+    - IGRP가 발전된 라우팅 프로토콜
+    - DUAL 알고리즘 사용하여 최적 경로와 후속 경로 산출
+    - Convergen time이 빠르다
+    - AD값은 내부가 90, 외부가 170
+    - AS(Autonomous System) 단위로 구성
+    - Classless Routing protocol
+- 장점
+    - 빠르다
+    - 부하분산 지원(Unequal cost)
+    - OSPF에 비해 설정이 간단하다
+- 단점
+    - Cisco 전용 Routing protocol이기에 Cisco router에서만 동작
+    - 대규모 네트워크 구성은 힘들다(라우팅 테이블이 매우 커짐)
+
+- EIGRP Packet : 이웃을 맺고 라우팅 정보를 교환한다.
+    - Hello packet
+    - Update packet
+    - Query packet
+    - Reply packet
+    - ACK(Acknowledgement) packet
+
+- 라우팅 경로 계산 절차
+    - Hello packet을 인접 Router가 서로 교환 한 후 Neighbor 관계를 맺고 Neighbor table을 생성한다.
+    - Update packet을 통해 라우팅 정보를 교환하고 Topology table을 생성한다.
+    - Topology table 정보를 종합해서 라우팅 경로를 계산하고 Best path를 Routing table에 저장한다.
+
+- 특정 네트워크로 가는 경로 또는 인접 Router가 다운되었을 때
+    1. 
+    2. 
+    3. ㅁㅁ  
+    ㅁ0000ㄻ
+
+- EIGRP 메트릭
+    - 
+    - 
+    - 
+
+- DUAL 알고리즘
+    - 메트릭을 구하고
+    - FD값을 구하고 가장 낮은 경로가 최적경로로 선출
+    - 남아있는 경로 중 AD 값이 FD값보다 작은 경우 후속 경로로 선출
+
+
+## 5. 동적 라우팅 프로토콜 - OSPF // 정리가 필요하다.
+
+- OSPF Protocol
+    - Link-state 라우팅 프로토콜
+    - Classless 라우팅 프로토콜
+    - Metric(메트릭) cost 사용
+    - Multicast를 사용하여 정보 전달
+    - AD값 : 110
+    - SPF(Shortest path First) 또는 Dijkstra 알고리즘 이용(경로 계산)
+
+- 장점
+    - area 단위로 구성 --> 대규모 네트워크를 안정적으로 운영 가능
+        - 
+    - Stub이라는 강력한 축양 기능이 있다.....
+        - 
+    - 표준 Routing Protocol
+    - Convergence time이 전반적으로 빠른 편이다.
+
+- 단점
+    - 설정이 복잡하다
+        - 네트워크 종류에 따라 동작하는 방식과 설정이 다르다.
+    - 네트워크의 종류
+        - Broadcast Multi Access
+        - Point-to-point
+        - Point-to-Multipoint
+        - Non Broadcast Multi Access
+    
+    - Broadcast Multi Access
+
+    - Non Broadcast Multi Access
+
+    - Point-to-point
+
+    - Point-to-Multipoint(찾아보자)
+
+- Packet
+    - Hello packet
+        - 내용
+    - DBD packet
+        - 내용
+    - LSR packet
+        - 내용
+    - LSR packet
+        - 내용
+    - LSU packet
+        - 내용
+    - LSAck packet
+        - 내용
+
+- 과정
+    1. OSPF를 설정한 Router끼리 Hello packet을 교환해서 Neighbor 혹은 adjancent Neighbor를 맺는다
+        - adjancent Neighbor --> 라우팅 정보(LSA:Link State Advertisement)를 교환하는 네이버
+    2. adjancent 네이버인 Router간 라우팅 정보를 서로 교환. 전송 받은 LSA를 Link-State-DB에 저장
+    3. LSA를 모두 교환하고 SPF 또는 다익스트라 알고리즘을 이용하여 각 목적지까지의 최적 경로를 계산 후 Routing table에 올린다.
+    4. 네트워크의 상태가 변하면 다시 위의 과정을 반복해서 Routing table을 생성
+
+- 

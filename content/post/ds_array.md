@@ -178,10 +178,10 @@ int myArray<T>::size()
 }
 ```
 	
-- C++에서는 위의 클래스를 최적화시켜 STL을 지원한다. <a href="/post/stl_vector">[ C++ STL vector ]</a>
+- C++에서는 위의 클래스를 최적화시켜 STL을 지원한다. [ [C++ STL vector](/post/stl_vector "/post/stl_vector") ]
 
 >C++ STL vector
-vector를 사용하여 여러가지 동작이 가능하다. 자세한 내용은 추후에 <a href="/post/stl_vector">[ C++ STL vector ]</a>에서 다루겠습니다. 아래에는 사용하는 예시를 넣었습니다.
+vector를 사용하여 여러가지 동작이 가능하다. 자세한 내용은 추후에 [ [C++ STL vector](/post/stl_vector "/post/stl_vector") ]에서 다루겠습니다. 아래에는 사용하는 예시를 넣었습니다.
 ```cpp
 vector<int> arr1;
 vector<int> arr2(12);

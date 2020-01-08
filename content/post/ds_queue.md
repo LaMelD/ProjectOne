@@ -21,7 +21,7 @@ linktitle: Data Structure Queue
 - 넣은 순서대로 자료를 꺼내가므로 순서대로 처리해야 하는 자료를 임시작으로 저장하는 용도로 흔히 사용한다.
 - 저장되는 자료의 타입이 동일하므로 배열 또는 연결리스트로 Queue를 구현할 수 있다.
 
-<img src="/images/queue1.png" width=30% height=30%>
+![IMAGE](/images/queue1.png)
 
 >1. 선형 큐(Linear Queue)<br>
 선형 큐는 큐의 가장 단순한 형태로써, 큐의 가장 앞을 가리키는 front와 가장 뒤를 가리키는 rear를 갖는다. 자료를 추가하면, 현재 rear가 가리키는 위치에 자료를 추가하고, rear는 1만큼 증가한다. 자료를 꺼내면, 현재 front가 가리키는 위치의 자료를 꺼내고 front는 1만큼 증가한다.<br>

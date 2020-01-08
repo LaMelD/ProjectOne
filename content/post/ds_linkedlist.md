@@ -19,8 +19,7 @@ linktitle: Data Structure Single Linked List
 - 하나의 노드에 필요한 정보를 담고 다음에 해당하는 노드를 가리키고 있는 자료구조로 포인터를 이용해 자료들을 선형으로 연결한 자료구조이다.
 - [ 배열 ] 과 비교했을 때 추가 및 삭제가 쉽다는 장점이 있지만 접근할 때 O(n)만큼 걸린다는 단점이 있습니다.
 
-<br><br>
-<hr>
+-----
 
 ### 2. 구현
 - List를 구성할 노드를 생성하고 기본적인 기능을 추가합니다.
@@ -35,7 +34,7 @@ linktitle: Data Structure Single Linked List
 		- setNext() : 현재 노드의 다음 노드를 설정한다.
 
 >
-```
+```cpp
 template <class T>
 class Node
 {
@@ -79,7 +78,7 @@ Node<T>::Node(T n)
 		- getData(), AddFront(), AddBack(), InsertNode(), DeleteNode()
 		
 >
-```
+```cpp
 template <class T>
 class SingleLinkedList
 {
@@ -105,7 +104,7 @@ public:
 - 멤버 함수 상세 내용
 
 >getData(int n) : phead부터 n번째 data를 리턴한다.
-```
+```cpp
 template <class T>
 T SingleLinkedList<T>::getValue(int n)
 {
@@ -119,7 +118,7 @@ T SingleLinkedList<T>::getValue(int n)
 }
 ```
 >AddFront(T n) : List의 맨 앞에 추가한다.
-```
+```cpp
 template <class T>
 void SingleLinkedList<T>::AddFront(T n)
 {
@@ -139,7 +138,7 @@ void SingleLinkedList<T>::AddFront(T n)
 	}
 ```
 >AddBack(T n) : List의 맨 뒤에 추가한다
-```
+```cpp
 template <class T>
 void SingleLinkedList<T>::AddBack(T n)
 {
@@ -160,7 +159,7 @@ void SingleLinkedList<T>::AddBack(T n)
 }
 ```
 >InsertNode(Node\<T\>* prev, T n) : prev 노드 뒤에 n의 value를 갖는 노드를 추가한다.
-```
+```cpp
 template <class T>
 void SingleLinkedList<T>::InsertNode(Node<T>* previous, T n)
 {
@@ -173,7 +172,7 @@ void SingleLinkedList<T>::InsertNode(Node<T>* previous, T n)
 }
 ```
 >DeleteNode(int n) : phead부터 n번째 인덱스의 다음 node를 삭제한다.
-```
+```cpp
 template <class T>
 void SingleLinkedList<T>::DeleteNode(int n)
 {
@@ -216,7 +215,7 @@ void SingleLinkedList<T>::DeleteNode(int n)
 - 전체 코드
 
 >
-```
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -411,8 +410,8 @@ int main()
 	cout << '\n';
 }
 ```
->출력<br>
-```
+>출력  
+```txt
 2, 3, 9, 10을 앞에 추가하고, 4, 5, 6, 7, 8을 뒤에 추가한 결과 : 8 7 6 5 4 2 3 9 10
 앞에서 3번째 인덱스 뒤에 150을 추가한다
 5번째 인덱스 뒤의 노드를 삭제한다
