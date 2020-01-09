@@ -509,6 +509,7 @@ configure terminal
 		
 
 확인 command
+show running-config
 show ip interface brief
 show ip route
 show ip eigrp neighbors
@@ -590,7 +591,18 @@ configure terminal
 		redistribute eigrp [AS number] 10 subnets
 		exit
 	
-	//ospf의 내용을  eigrp로 재분배(전달/전환) 한다
+	//ospf의 내용을 eigrp로 재분배(전달/전환) 한다
 	router eigrp [AS number]
 		redistribute ospf [pid] metric [b/w] [dly] [reliability] [loading] [MTU] 
+		exit
+
+	//ospf의 내용을 rip로 재분배(전달/전환) 한다
+	router rip
+		redistribute ospf [pid] metric [Hop-count]
+		exit
+
+	//직접 연결된 내용을 rip로 재분배(전달/전환) 한다
+	router ospf [pid]
+		redistribute connected subnets
+		exit
 ```
