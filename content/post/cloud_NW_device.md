@@ -232,7 +232,7 @@ configure terminal
     - 남아있는 경로 중 AD 값이 FD값보다 작은 경우 후속 경로로 선출
 
 
-## 5. 동적 라우팅 프로토콜 - OSPF // 정리가 필요하다.
+## 6. 동적 라우팅 프로토콜 - OSPF // 정리가 필요하다.
 
 - OSPF Protocol
     - Link-state 라우팅 프로토콜
@@ -287,8 +287,6 @@ configure terminal
     2. adjancent 네이버인 Router간 라우팅 정보를 서로 교환. 전송 받은 LSA를 Link-State-DB에 저장
     3. LSA를 모두 교환하고 SPF 또는 다익스트라 알고리즘을 이용하여 각 목적지까지의 최적 경로를 계산 후 Routing table에 올린다.
     4. 네트워크의 상태가 변하면 다시 위의 과정을 반복해서 Routing table을 생성
-
-- 
 
 >명령어
 ```
@@ -605,4 +603,19 @@ configure terminal
 	router ospf [pid]
 		redistribute connected subnets
 		exit
+```
+
+
+## 7. 라우터의 보안 기능 - ACL
+
+- ACL 접근 제어 목록
+
+- 기본 ACL
+
+- 확장 ACL
+
+- ACL 설정 방법
+
+>실습 자료
+```
 ```
