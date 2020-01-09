@@ -608,13 +608,65 @@ configure terminal
 
 ## 7. 라우터의 보안 기능 - ACL
 
-- ACL 접근 제어 목록
+![IMAGE](/images/net_device_1/ACL_ground.PNG)
 
-- 기본 ACL
+- ACL 접근 제어 목록
+    - 특정 트래픽의 접근을 허용할지 차단할지 결정하는 리스트(Filtering)
+    - 보안을 위해 많이 사용
+    - 3계층 장비인 Router에서 사용하지만 Application Layer부분도 관리하기 때문에 Network Layer 까지라고 단정할 수 없다.
+    - 하지만 Application Layer까지 완벽히 막을 수 없기 때문에 Firewall(방화벽) 등의 전문적인 보안 장비를 사용
+    - ACL은 크게 Numbered와 Named 두 종류가 있다. 그리고 다시 Standard(1~99)와 Extended(100~199)로 구분할 수 있다.(이외에도 여러가지가 있다.)
+
+- 기본 ACL : 1번 ~ 99번
+    - Standard ACL의 경우 source address를 보고 permit, deny 여부를 결정
+    - packet의 source address와 ACL에 정의된 source address가 일치하면 ACL의 내용을 수행한다.
+    - permit이면 packet을 정해진 경로로 전송하고 deny면 packet의 흐름을 차단
+
+>기본 ACL 적용
+```
+configure terminal
+    //생성
+    access-list [number] [permit | deny] [네트워크 대역] [와일드카드]
+    //적용
+    interface [cable] [nubmer/number]
+        ip access-group [access list number] [in | out]
+
+ex) R2는 출발지가 10.10.10.0/24인 트래픽이 fa 0/1으로 들어오는 것을 차단
+//생성
+configure terminal
+    access-list 1 deny 10.10.10.0 0.0.0.255
+    access-list 1 permit any
+    exit
+//적용
+configure terminal
+    int fa 0/1
+        ip access-group 1 in
+```
 
 - 확장 ACL
+    - Standart ACL은 source address만 조건으로 보고 filtering을 수행한다. 하지만 extended ACL은 source address와 destination address 모두를 조건으로 보고 제어한다. 
+    - 또한 standard ACL은 TCP/IP에 대해 제어만을 하지만 extended ACL은 ip, tcp, udp, icmp 등의 상세 프로토콜을 선택해서 설정할 수 있다.
+
+>확장 ACL 설정
+```
+configure terminal
+    access-list [list number] [permit | deny] [protocol] [source addr] [mask] [destination addr] [mask] ['eq' operator port]
+
+ex)
+
+```
 
 - ACL 설정 방법
+    - inbound :: 내부로 들어올 때 필터링
+    - outbound :: 외부로 나갈 때 필터링
+    
+    - 순서 : 생성 --> 적용
+    
+    - ACL 규칙
+        1. ACL은 윗줄부터 순서대로 수행한다.
+        2. ACL의 마지막에는 deny any가 생략되어 있다.
+        3. numbered ACL은 순서대로 입력되기 때무에 중간 삽입이나 삭제가 불가능하다.
+            - 예외로 named ACL의 경우는 중간 삭제 및 추가 삽입이 가능하다.
 
 >실습 자료
 ```
