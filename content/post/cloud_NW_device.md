@@ -3,9 +3,11 @@ author: "LaMelD"
 title: "[CLOUD] Network Device"
 date: 2020-01-06T09:34:37+09:00
 tags : [
+    cloud,
 	study_network
 ]
 categories : [
+    cloud,
 	study_network
 ]
 linktitle: Network Device

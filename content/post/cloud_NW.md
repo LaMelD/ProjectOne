@@ -3,9 +3,11 @@ author: "LaMelD"
 title: "[CLOUD] Network"
 date: 2019-12-31T13:23:21+09:00
 tags : [
+	cloud,
 	study_network
 ]
 categories : [
+	cloud,
 	study_network
 ]
 linktitle: Network
