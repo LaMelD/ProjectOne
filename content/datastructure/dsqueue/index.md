@@ -141,7 +141,7 @@ int main()
 	return 0;
 }
 ```
->결과
+- 결과
 ```
 capacity가 20인 CircularQueue를 생성합니다
 0부터 19까지 20개를 Queue에 넣습니다.
