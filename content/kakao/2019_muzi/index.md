@@ -1,21 +1,10 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2019] 무지의 먹방 라이브"
+title: "[2019] 무지의 먹방 라이브"
 date: 2019-11-24T18:15:07+09:00
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2019",
-]
-categories : [
-    "Kakao Blind 2019",
-]
-linktitle: Kakao Blind 2019 Muzi
+weight: 12
 ---
 
-<h1>카카오 블라인드 테스트 2019 - 무지의 먹방 라이브</h1>
-
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/42891">https://programmers.co.kr/learn/courses/30/lessons/42891</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/42891)
 
 - 문제 설명
 	1. 회전판에 먹어야 할 N개의 음식이 있다.
@@ -27,8 +16,7 @@ linktitle: Kakao Blind 2019 Muzi
 - 문제 풀이
 	- K초까지 어떤 음식을 먹었는지 계산하여 다음 음식의 번호를 리턴한다.
 
->Code
-```
+```cpp
 #include <algorithm>
 #include <string>
 #include <vector>

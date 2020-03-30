@@ -1,21 +1,10 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2019] 길 찾기 게임"
+title: "[2019] 길 찾기 게임"
 date: 2019-11-24T18:15:16+09:00
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2019",
-]
-categories : [
-    "Kakao Blind 2019",
-]
-linktitle: Kakao Blind 2019 Way
+weight: 14
 ---
 
-<h1>카카오 블라인드 테스트 2019 - 길 찾기 게임</h1>
-
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/42892">https://programmers.co.kr/learn/courses/30/lessons/42892</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/42892)
 
 - 문제 설명
 	1. 트리를 구성하는 모든 노드의 x, y 좌표 값은 정수이다.
@@ -26,7 +15,7 @@ linktitle: Kakao Blind 2019 Way
 	6. 임의의 노드 V의 오른쪽 서브 트리에 있는 모든 노드의 x값은 V의 x값보다 크다.
 	7. 노드들로 구성된 이진트리를 전위 준회, 후위 순회한 결과를 리턴한다.
 
-<img src="/images/way1.png">
+![](/images/way1.png)
 
 - 문제 풀이
 	- Tree를 구성할 Node class를 생성한다.
@@ -35,8 +24,7 @@ linktitle: Kakao Blind 2019 Way
 	- 문제에 input 데이터를 y를 기준으로 정렬하고 Tree에 푸시하여 Tree를 완성한다.
 	- preorder, postorder를 각각 구현하여 배열에 넣은뒤 리턴한다.
 	
->Code
-```
+```cpp
 #include <string>
 #include <algorithm>
 #include <vector>

@@ -1,21 +1,10 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2019] 오픈채팅방"
+title: "[2019] 오픈채팅방"
 date: 2019-11-24T18:14:39+09:00
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2019",
-]
-categories : [
-    "Kakao Blind 2019",
-]
-linktitle: Kakao Blind 2019 Open
+weight: 13
 ---
 
-<h1>카카오 블라인드 테스트 2019 - 오픈채팅방</h1>
-
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/42888">https://programmers.co.kr/learn/courses/30/lessons/42888</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/42888)
 
 - 문제 설명
 	- 오픈채팅방에선 친구가 아닌 사람들과 대화가 가능하다.
@@ -35,8 +24,7 @@ linktitle: Kakao Blind 2019 Open
 		- Change : 닉네임을 변경했음을 알린다.
 	- input인 record를 파싱하여 데이터를 축적하여 result에 저장한다.
 	
->Code
-```
+```cpp
 #include <string>
 #include <vector>
 #include <sstream>

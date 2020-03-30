@@ -1,21 +1,10 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2019] 매칭 점수"
+title: "[2019] 매칭 점수"
 date: 2019-11-24T18:15:23+09:00
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2019",
-]
-categories : [
-    "Kakao Blind 2019",
-]
-linktitle: Kakao Blind 2019 Matching
+weight: 11
 ---
 
-<h1>카카오 블라인드 테스트 2019 - 매칭 점수</h1>
-
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/42893">https://programmers.co.kr/learn/courses/30/lessons/42893</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/42893)
 
 - 문제 설명
 	1. 한 웹페이지에 대해서 기본점수, 외부 링크 수, 링크점수, 매칭점수를 구할 수 있다.
@@ -28,7 +17,7 @@ linktitle: Kakao Blind 2019 Matching
 
 - 입력 예시 : `["<html lang=\"ko\" xml:lang=\"ko\" xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta property=\"og:url\" content=\"https://careers.kakao.com/interview/list\"/>\n</head>  \n<body>\n<a href=\"https://programmers.co.kr/learn/courses/4673\"></a>#!MuziMuzi!)jayg07con&&\n\n</body>\n</html>", "<html lang=\"ko\" xml:lang=\"ko\" xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta property=\"og:url\" content=\"https://www.kakaocorp.com\"/>\n</head>  \n<body>\ncon%\tmuzI92apeach&2<a href=\"https://hashcode.co.kr/tos\"></a>\n\n\t^\n</body>\n</html>"]`
 
-<img src="/images/matching1.jpg">
+![](/images/matching1.jpg)
 
 - 검색어 : hi
 	- A의 기본점수 : 1점
@@ -47,15 +36,12 @@ linktitle: Kakao Blind 2019 Matching
 	- B : 4점
 	- C : 9점
 
-<br>
-
 - 문제 풀이
 	- 입력 형식을 파싱하여 각 웹페이지의 URL과 링크 URL, index, 기본점수, (기본점수 / 링크수)를 구한다.
 	- 각 웹페이의 매칭점수를 완성하고, 매칭 점수를 기준으로하여 내림차순으로 정렬하여 매칭 점수가 가장 높은 웹페이지의 index를 리턴한다.
 	- &&는 왼쪽 것이 false라면 오른쪽 조건을 확인하지 않는다는 것을 이용한다.
 	
->Code 
-```
+```cpp
 #include <string>
 #include <vector>
 #include <algorithm>
