@@ -6,7 +6,7 @@ weight: 3
 
 <h1>카카오 블라인드 테스트 2018 - 다트 게임</h1>
 
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/17682">https://programmers.co.kr/learn/courses/30/lessons/17682</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/17682)
 
 - 규칙
 	1. 다트 게임은 총 3번의 기회로 구성된다.

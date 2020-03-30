@@ -1,21 +1,12 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2018] 뉴스 클러스터링"
+title: "[2018] 뉴스 클러스터링"
 date: "2019-11-24"
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2018",
-]
-categories : [
-    "Kakao Blind 2018",
-]
-linktitle: Kakao Blind 2018 News
+weight: 4
 ---
 
 <h1>카카오 블라인드 테스트 2018 - 뉴스 클러스터링</h1>
 
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/17677">https://programmers.co.kr/learn/courses/30/lessons/17677</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/17677)
 
 - 문제 설명
 	1. 자카드 유사도
@@ -46,8 +37,7 @@ linktitle: Kakao Blind 2018 News
 	- 두 문자열을 대문자로 바꾸고 다중집합을 만든다.
 	- 교집합과 합집합을 만들어 자카드 유사도를 구한뒤 65536을 곱한뒤 리턴한다.
 	
->Code
-```
+```cpp
 #include <string>
 #include <vector>
 #include <queue>
