@@ -4,8 +4,6 @@ date: "2019-11-21"
 weight: 3
 ---
 
-<h1>카카오 블라인드 테스트 2018 - 다트 게임</h1>
-
 [문제 출처](https://programmers.co.kr/learn/courses/30/lessons/17682)
 
 - 규칙

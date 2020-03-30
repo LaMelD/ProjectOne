@@ -4,8 +4,6 @@ date: "2019-11-24"
 weight: 4
 ---
 
-<h1>카카오 블라인드 테스트 2018 - 뉴스 클러스터링</h1>
-
 [문제 출처](https://programmers.co.kr/learn/courses/30/lessons/17677)
 
 - 문제 설명

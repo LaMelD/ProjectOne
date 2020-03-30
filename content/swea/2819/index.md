@@ -4,7 +4,7 @@ date: 2019-11-29T17:38:30+09:00
 weight: 2
 ---
 
-# 2819 - 격자판의 숫자 이어 붙이기
+# 격자판의 숫자 이어 붙이기
 
 [문제 출처](https://swexpertacademy.com/main/code/problem/problemDetail.do)
 

@@ -4,8 +4,6 @@ date: "2019-11-22"
 weight: 2
 ---
 
-<h1>카카오 블라인드 테스트 2018 - 캐시</h1>
-
 [문제 출처](https://programmers.co.kr/learn/courses/30/lessons/17680)
 
 - 문제 설명
