@@ -1,21 +1,12 @@
 ---
-author: "LaMelD"
-title: "[SW Expert Academy][D4] 2819"
+title: "[D4] 2819"
 date: 2019-11-29T17:38:30+09:00
-tags : [
-    "c++",
-    "sw expert academy",
-    "D4",
-]
-categories : [
-    "sw expert academy d4",
-]
-linktitle: SW Expert Academy D4 2819
+weight: 2
 ---
 
-<h1>2819 - 격자판의 숫자 이어 붙이기</h1>
+# 2819 - 격자판의 숫자 이어 붙이기
 
-[문제 출처](https://swexpertacademy.com/main/code/problem/problemDetail.do "https://swexpertacademy.com/main/code/problem/problemDetail.do")
+[문제 출처](https://swexpertacademy.com/main/code/problem/problemDetail.do)
 
 - 문제 설명
 	1. 4 x 4 크기의 격자판이 있다. 격자판의 각 격자칸에는 0부터 9사이의 숫자가 적혀 있다.
@@ -28,9 +19,8 @@ linktitle: SW Expert Academy D4 2819
 - 문제 풀이
 	- 완전탐색을 통해서 가능한 경우의 수를 모두 구한다.
 	- 가능한 모든 경우의 수에서 중복을 제거한다.
-	
->Code
-```
+
+```cpp
 #include <iostream>
 #include <vector>
 #include <string>
