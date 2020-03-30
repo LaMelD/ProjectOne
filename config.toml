@@ -26,9 +26,14 @@ summaryLength = 30
     weight = 3
 
 [[menu.main]]
-    name = "Study"
-    url = "/study/"
+    name = "DataStructure"
+    url = "/datastructure/"
     weight = 4
+
+[[menu.main]]
+    name = "CloudBasic"
+    url = "/cloudbasic/"
+    weight = 5
 
 [params]
   google_analytics_id=""
@@ -38,10 +43,14 @@ summaryLength = 30
   homepage_button_text_swea = 'SWexpertAcademy 문제 풀이'
   homepage_button_link_study = '/study'
   homepage_button_text_study = 'Study 자료'
+  homepage_button_link_datastructure = '/datastructure'
+  homepage_button_text_datastructure = '자료구조'
+  homepage_button_link_cloudbasic = '/cloudbasic'
+  homepage_button_text_cloudbasic = '클라우드 기초지식'
   homepage_intro = '이 블로그의 설명을 담겠습니다.'
   homepage_image = '/images/terminal.gif'
   # 폴더를 추가하려면 아래에 등록하세요
-  mainSections = ['kakao', 'swea', 'study']
+  mainSections = ['kakao', 'swea', 'study', 'datastructure', 'cloudbasic']
 
   ## You can enable to add anchor links to header elements
   # enable_anchor_link = true
