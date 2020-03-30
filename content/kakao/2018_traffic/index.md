@@ -1,21 +1,10 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2018] 추석 트래픽"
+title: "[2018] 추석 트래픽"
 date: "2019-11-23"
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2018",
-]
-categories : [
-    "Kakao Blind 2018",
-]
-linktitle: Kakao Blind 2018 Traffic
+weight: 7
 ---
 
-<h1>카카오 블라인드 테스트 2018 - 추석 트래픽</h1>
-
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/17676">https://programmers.co.kr/learn/courses/30/lessons/17676</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/17676)
 
 - 처리량의 변화가 어디서 일어나는지 알아내는 것에 어려움이 있었다. 큰 문제를 작은 문제로 나누어 풀어나간다는 것에 초점을 두고 하나의 로그데이터를 살펴보았을 때 어디서 처리량의 변화가 일어나는지 확인하였다. 이 과정에서 시간이 정말 오래걸렸다.
 
@@ -28,8 +17,7 @@ linktitle: Kakao Blind 2018 Traffic
 		- `sss` : 0.sss초
 		- `T` : 처리시간(2s, 0.312s)
 		
-
-<img src="/images/traffic1.png">
+	![](/images/traffic1.png)
 
 	(1)에서의 처리량 : 4
 	(2)에서의 처리량 : 7
@@ -49,8 +37,7 @@ linktitle: Kakao Blind 2018 Traffic
 	- 모든 로그데이터의 start를 기준으로 왼쪽으로 1초 동안에 처리량을 구하여 그 중에서 가장 큰 처리량을 리턴한다.
 
 
->Code
-```
+```cpp
 #include <string>
 #include <vector>
 

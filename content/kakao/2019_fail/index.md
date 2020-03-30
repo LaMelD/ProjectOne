@@ -1,21 +1,10 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2019] 실패율"
+title: "[2019] 실패율"
 date: "2019-11-24"
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2019",
-]
-categories : [
-    "Kakao Blind 2019",
-]
-linktitle: Kakao Blind 2019 Fail
+weight: 9
 ---
 
-<h1>카카오 블라인드 테스트 2019 - 실패율</h1>
-
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/42889">https://programmers.co.kr/learn/courses/30/lessons/42889</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/42889)
 
 - 문제 설명
 	1. 실패율 = A / B
@@ -28,8 +17,7 @@ linktitle: Kakao Blind 2019 Fail
 	- 모든 스테이지 A, B를 확정시킨다.
 	- 실패율을 비교하여 정렬을 진행한 뒤 스테이지 number만 리턴한다.
 	
->Code
-```
+```cpp
 #include <string>
 #include <vector>
 #include <algorithm>

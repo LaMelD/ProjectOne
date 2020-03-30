@@ -1,21 +1,10 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2018] 셔틀버스"
+title: "[2018] 셔틀버스"
 date: "2019-11-22"
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2018",
-]
-categories : [
-    "Kakao Blind 2018",
-]
-linktitle: Kakao Blind 2018 Shuttle-Bus
+weight: 6
 ---
 
-<h1>카카오 블라인드 테스트 2018 - 셔틀버스</h1>
-
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/17678">https://programmers.co.kr/learn/courses/30/lessons/17678</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/17678)
 
 - 문제 설명
 	1. 셔틀은 `09:00` 부터 총 `n` 회 `t` 분 간격으로 역에 도착하며, 하나의 셔틀에는 최대 `m` 명의 승객이 탈 수 있다.
@@ -31,8 +20,7 @@ linktitle: Kakao Blind 2018 Shuttle-Bus
 	- 마지막 버스가 만원이라면 가장 늦게온 사람보다 1분 먼저 도착하면 된다.
 	- 마지막 버스가 만원이 아니라면 버스 도착시간에 정류장에 도착하면 된다.
 
->code
-```
+```cpp
 #include <string>
 #include <vector>
 #include <algorithm>

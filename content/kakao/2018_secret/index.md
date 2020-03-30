@@ -1,21 +1,10 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2018] 비밀지도"
+title: "[2018] 비밀지도"
 date: "2019-11-23"
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2018",
-]
-categories : [
-    "Kakao Blind 2018",
-]
-linktitle: Kakao Blind 2018 Secret
+weight: 5
 ---
 
-<h1>카카오 블라인드 테스트 2018 - 비밀지도</h1>
-
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/17681">https://programmers.co.kr/learn/courses/30/lessons/17681</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/17681)
 
 - 문제 설명
 	1. 지도는 한 변의 길이가 `n` 인 정사각형 배열 형태로, 각 칸은 공백 또는 "#"으로 이루어져 있다.
@@ -23,14 +12,13 @@ linktitle: Kakao Blind 2018 Secret
 	3. 두 지도는 각각 정수 배열로 암호화 되어 있다.
 	4. 암호화된 배열은 지도의 각 가로줄에서 벽 부분을 1, 공백부분을 0으로 부호화했을 때 얻어지는 이진수에 해당한는 값의 배열이다.
 	
-<img src="/images/secret1.png">
+![](/images/secret1.png)
 
 - 문제 풀이
 	- 입력 받은 정수를 각각 2진수로 변환한다.
 	- 지도A와 지도B를 or연산을 통해서 전체 지도를 구한다.
 
->Code
-```
+```cpp
 #include <string>
 #include <vector>
 

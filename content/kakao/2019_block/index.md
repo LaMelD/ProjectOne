@@ -1,38 +1,29 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2019] 블록 게임"
+title: "[2018] 블록 게임"
 date: "2019-11-24"
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2019",
-]
-categories : [
-    "Kakao Blind 2019",
-]
-linktitle: Kakao Blind 2019 Block
+weight: 8
 ---
 
-<h1>카카오 블라인드 테스트 2019 - 블록게임</h1>
-
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/42894">https://programmers.co.kr/learn/courses/30/lessons/42894</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/42894)
 
 - 문제 설명
 	1. 아래와 같이 12가지 모양의 블록이 배치되어 있다.
-<img src="/images/block-game1.png">
-	2. 1x1 크기의 검은 블록을 떨어뜨려 기존에 놓인 블록을 합해 속이 꽉 채워진 직사각형을 만들어 그 블록을 없앨 수 있다.
-<img src="/images/block-game2.png">
-<img src="/images/block-game3.png">
+
+	![](/images/block-game1.png)
+	2. 1x1 크기의 검은 블록을 떨어뜨려 기존에 놓인 블록을 합해 속이 꽉 채워진 직사각형을 만들어 그 블록을 없앨 수 있다.  
+	![](/images/block-game2.png)
+
+	![](/images/block-game3.png)
 	3. 검은 블록을 떨어뜨려 없앨 수 있는 블록 개수의 최댓값을 구한다.
 	
 - 문제 풀이 
 	1. 위에서 검은 블록을 떨어뜨려 제거할 수 있는 블록을 판단한다.
-<img src="/images/block-game4.png">
+	
+	![](/images/block-game4.png)
 	2. 현재 선택된 블록의 위쪽에 방해물이 있는지 판단하여 방해물이 없을 경우 블록을 지우고, 방해물이 있을 경우 continue한다.
 	3. 제거할 블록이 없을 때 까지 반복하여 완료한다.
 	
->Code
-```
+```cpp
 #include <string>
 #include <vector>
 
