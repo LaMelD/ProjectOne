@@ -16,29 +16,22 @@ summaryLength = 30
     weight = 1
 
 [[menu.main]]
-    name = "Docs"
-    url = "/docs/"
-    weight = 2
-
-[[menu.main]]
     name = "Kakao"
     url = "/kakao/"
-    weight = 3
+    weight = 2
 
 [[menu.main]]
     name = "Swea"
     url = "/swea/"
-    weight = 4
+    weight = 3
 
 [[menu.main]]
     name = "Study"
     url = "/study/"
-    weight = 5
+    weight = 4
 
 [params]
   google_analytics_id=""
-  homepage_button_link_docs = '/docs'
-  homepage_button_text_docs = '디폴트로 있던 버튼'
   homepage_button_link_kakao = '/kakao'
   homepage_button_text_kakao = 'kakao 문제 풀이'
   homepage_button_link_swea = '/swea'
@@ -48,7 +41,7 @@ summaryLength = 30
   homepage_intro = '이 블로그의 설명을 담겠습니다.'
   homepage_image = '/images/terminal.gif'
   # 폴더를 추가하려면 아래에 등록하세요
-  mainSections = ['docs', 'kakao', 'swea', 'study']
+  mainSections = ['kakao', 'swea', 'study']
 
   ## You can enable to add anchor links to header elements
   # enable_anchor_link = true
