@@ -1,5 +1,5 @@
 ---
-title: "[Data Structure] Stack"
+title: "[DS] Stack"
 date: "2019-11-15"
 weight: 5
 ---
@@ -31,8 +31,8 @@ weight: 5
 		- isEmpty() : Stack이 비어있는지 판단하는 함수
 		- isFull() : Stack이 초깅 설정한 capacity에 도달 했는지(꽉 찼는지) 판단하는 함수
 		
->
-```
+
+```cpp
 template <class T>
 class Stack
 {
@@ -54,8 +54,8 @@ public :
 
 - 각 멤버 함수의 구현
 
->Stack()
-```
+- Stack()
+```cpp
 template <class T>
 Stack<T>::Stack()
 {
@@ -64,8 +64,8 @@ Stack<T>::Stack()
 	this->top = -1;
 }
 ```
->Stack(int capacity)
-```
+- Stack(int capacity)
+```cpp
 template <class T>
 Stack<T>::Stack(int capacity)
 {
@@ -74,8 +74,8 @@ Stack<T>::Stack(int capacity)
 	this->top = -1;
 }
 ```
->T Top()
-```
+- T Top()
+```cpp
 template <class T>
 T Stack<T>::Top()
 {
@@ -87,8 +87,8 @@ T Stack<T>::Top()
 	return ret;
 }
 ```
->void Push(T)
-```
+- void Push(T)
+```cpp
 template <class T>
 void Stack<T>::Push(T data)
 {
@@ -98,8 +98,8 @@ void Stack<T>::Push(T data)
 	}
 }
 ```
->void Pop()
-```
+- void Pop()
+```cpp
 template <class T>
 void Stack<T>::Pop()
 {
@@ -109,8 +109,8 @@ void Stack<T>::Pop()
 	}
 }
 ```
->bool isEmpty()
-```
+- bool isEmpty()
+```cpp
 template <class T>
 bool Stack<T>::isEmpty()
 {
@@ -121,8 +121,8 @@ bool Stack<T>::isEmpty()
 	return false;
 }
 ```
->bool isFull()
-```
+- bool isFull()
+```cpp
 template <class T>
 bool Stack<T>::isFull()
 {
@@ -135,9 +135,7 @@ bool Stack<T>::isFull()
 ```
 
 - 전체 코드 및 테스트
-
->
-```
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -256,7 +254,7 @@ int main()
 	cout << "stack의 Top : " << stack.Top() << '\n';
 }
 ```
->결과
+- 결과
 ```
 capacity가 70인 Stack 생성
 stack이 비어있습니다.
@@ -269,7 +267,8 @@ stack에서 15개의 데이터를 pop합니다
 stack의 Top : 54
 ```
 
-<hr>
+---
+
 - C++ STL vector를 Stack처럼 사용할 수 있습니다. 자세한 내용은 <a href="/post/stl_vector">[ C++ STL vector ]</a>에서 확인하세요.
 
 

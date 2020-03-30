@@ -29,7 +29,7 @@ weight: 4
 ### 2. 구현 : Circular Queue
 
 
-```
+```cpp
 #include <iostream>
 #include <cstring>
 
