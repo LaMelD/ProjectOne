@@ -146,8 +146,6 @@ weight: 3
     - 일전시간 정보를 못 받으면 삭제(Hold-down Timer)
     - 네트워크에 변화가 생겼을 때만 광고(패킷)를 보낸다(Triggered Update)
 
-
->
 ```
 라우터(CISCO)
 a. interface에 연결된 부분 ip 설정
@@ -276,7 +274,7 @@ configure terminal
     3. LSA를 모두 교환하고 SPF 또는 다익스트라 알고리즘을 이용하여 각 목적지까지의 최적 경로를 계산 후 Routing table에 올린다.
     4. 네트워크의 상태가 변하면 다시 위의 과정을 반복해서 Routing table을 생성
 
->명령어
+- 명령어
 ```
 vmware 설명
 1. bridged
@@ -610,7 +608,7 @@ configure terminal
     - packet의 source address와 ACL에 정의된 source address가 일치하면 ACL의 내용을 수행한다.
     - permit이면 packet을 정해진 경로로 전송하고 deny면 packet의 흐름을 차단
 
->기본 ACL 적용
+- 기본 ACL 적용
 ```
 configure terminal
     //생성
@@ -659,7 +657,7 @@ configure terminal
         3. numbered ACL은 순서대로 입력되기 때무에 중간 삽입이나 삭제가 불가능하다.
             - 예외로 named ACL의 경우는 중간 삭제 및 추가 삽입이 가능하다.
 
->실습 자료
+- 실습 자료
 ```
 *permit이든 deny이든 조건에 맞는 것(from, to가 일치하는 것)이 나온다면 리스트를 빠져나온다*
 
