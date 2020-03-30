@@ -1,31 +1,20 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2020] 가사 검색"
+title: "[2020] 가사 검색"
 date: 2019-11-27T11:21:48+09:00
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2020",
-]
-categories : [
-    "Kakao Blind 2020",
-]
-linktitle: Kakao Blind 2020 Lyrics
+weight: 19
 ---
 
-<h1>카카오 블라인드 테스트 2020 - 가사 검색</h1>
-
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/60060">https://programmers.co.kr/learn/courses/30/lessons/60060</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/60060)
 
 - 문제 설명
 	- 노래 가사에 사용된 단어들 중에 특정 키워드가 몇 개 포함되어 있는지 알 수 있는 프로그램
 	
-	>예제<br>
-	"fro??"는 "frodo", "front", "frost"에 매치되므로 3입니다.<br>
-	"????o"는 "frodo", "kakao"에 매치되므로 2입니다.<br>
-	"fr???"는 "frodo", "front", "frost", "frame"에 매치되므로 4입니다.<br>
-	"fro???"는 "frozen"에 매치되므로 1입니다.<br>
-	"pro?"는 매치되는 가사 단어가 없으므로 0 입니다.
+	- 예시
+		- "fro??"는 "frodo", "front", "frost"에 매치되므로 3입니다.
+		- "????o"는 "frodo", "kakao"에 매치되므로 2입니다.
+		- "fr???"는 "frodo", "front", "frost", "frame"에 매치되므로 4입니다.
+		- "fro???"는 "frozen"에 매치되므로 1입니다.
+		- "pro?"는 매치되는 가사 단어가 없으므로 0 입니다.
 	
 - 문제 풀이
 	- 풀이 방법은 2가지가 있다.
@@ -34,8 +23,7 @@ linktitle: Kakao Blind 2020 Lyrics
 	- 완전탐색으로 문제를 해결할 경우 문자열을 비교하는 단계에서 효율이 떨어진다. 이러한 문제를 트라이 자료구조를 사용하였을 때 해결할 수 있다.
 	- 트라이 자료구조를 모른다면 효율성을 통과하기가 매우 어려웠다. 추후에 더 자세하게 추가하겠다.
 
->Code
-```
+```cpp
 #include <algorithm>
 #include <vector>
 #include <string>

@@ -1,28 +1,17 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2020] 기둥과 보 설치"
+title: "[2020] 기둥과 보 설치"
 date: 2019-11-27T11:22:18+09:00
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2020",
-]
-categories : [
-    "Kakao Blind 2020",
-]
-linktitle: Kakao Blind 2020 Pole
+weight: 20
 ---
 
-<h1>카카오 블라인드 테스트 2020 - 기둥과 보 설치</h1>
-
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/60061">https://programmers.co.kr/learn/courses/30/lessons/60061</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/60061)
 
 - 문제 설명
 	- 기둥과 보 조건
 		1. 기둥 : 바닥 위에 있거나 보의 한쪽 끝 부분 위에 있거나, 또는 다른 기둥 위에 있어야 한다.
 		2. 보 : 한쪽 끝 부분이 기둥 위에 있거나, 또는 양쪽 끝 부분이 다른 보와 동시에 연결되어 있어야 한다.
 	- 위의 조건을 기준으로 설치/제거를 실시한다.
-	- 입력 : [ x, y , a, b ]
+	- 입력 : \[ x, y , a, b \]
 		1. x, y : 설치/제거하는 물체의 좌표
 		2. a : 설치/제거할 구조물의 종류를 나타낸다. 0은 기둥, 1은 보
 		3. b : 설치/제거를 알려준다. 0은 삭제, 1은 설치
@@ -35,8 +24,7 @@ linktitle: Kakao Blind 2020 Pole
 	- 받은 입력을 순차적으로 Structure 객체에 실시한다.
 	- 실행 할 수 없는 입력은 무시한다.
 	
->Code
-```
+```cpp
 #include <string>
 #include <vector>
 
@@ -45,7 +33,7 @@ using namespace std;
 class element
 {
 private :
-	bool pillar;		//기둥
+	bool pillar;	//기둥
 	bool beam;		//보
 public :
 	element()

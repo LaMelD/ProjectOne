@@ -1,21 +1,10 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2020] 문자열 압축"
+title: "[2020] 문자열 압축"
 date: 2019-11-27T11:21:08+09:00
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2020",
-]
-categories : [
-    "Kakao Blind 2020",
-]
-linktitle: Kakao Blind 2020 Zip
+weight: 21
 ---
 
-<h1>카카오 블라인드 테스트 2020 - 문자열 압축</h1>
-
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/60057">https://programmers.co.kr/learn/courses/30/lessons/60057</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/60057)
 
 - 문제 설명
 	
@@ -34,8 +23,7 @@ linktitle: Kakao Blind 2020 Zip
 	- 문자열을 몇개 단위로 잘라 압축했을 때 가장 짧은지 판단한다.
 	- 문자열의 길이를 n이라고 했을 때 압축의 길이가 ( n / 2 )를 넘었을 경우 압축의 의미가 없으므로 최대 압축 단위는 ( n / 2 )로 한다.
 	
->Code
-```
+```cpp
 #include <string>
 #include <vector>
 
