@@ -1,16 +1,6 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2018] 캐시"
+title: "[2018] 캐시"
 date: "2019-11-22"
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2018",
-]
-categories : [
-    "Kakao Blind 2018",
-]
-linktitle: Kakao Blind 2018 Cache
 weight: 2
 ---
 
@@ -30,9 +20,8 @@ weight: 2
 	- cache miss이고 비어 있는 캐시가 없다면 가장 오랫동안 사용되지 않은 데이터를 교체한다.
 	- cache miss이고 비어 있는 캐시가 있다면 비어 있는 공간에 데이터와 사용된 시간을 넣는다.
 	- cache hit가 일어나면 해당 cache의 사용된 시간을 갱신한다.
-	
->Code
-```
+
+```cpp
 #include <string>
 #include <vector>
 

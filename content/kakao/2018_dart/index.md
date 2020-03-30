@@ -1,16 +1,7 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2018] 다트 게임"
+title: "[2018] 다트 게임"
 date: "2019-11-21"
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2018",
-]
-categories : [
-    "Kakao Blind 2018",
-]
-linktitle: Kakao Blind 2018 Dart-Game
+weight: 3
 ---
 
 <h1>카카오 블라인드 테스트 2018 - 다트 게임</h1>
@@ -28,9 +19,9 @@ linktitle: Kakao Blind 2018 Dart-Game
 	
 - 입력 형식 : 1S2D*3T(점수 | 보너스 | [ 옵션 ] )
 
->풀이<br>
-점수를 입력받고 S, D, T를 판별한다. 이후 보너스를 판별하여 현재의 점수를 수정하고 옵션을 확인하여 , 현재 기회에서 얻은 점수를 저장한다.
-```
+- 풀이
+	- 점수를 입력받고 S, D, T를 판별한다. 이후 보너스를 판별하여 현재의 점수를 수정하고 옵션을 확인하여 , 현재 기회에서 얻은 점수를 저장한다.
+```cpp
 #include <string>
 
 using namespace std;

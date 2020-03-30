@@ -6,7 +6,4 @@ weight: 1
 
 ## 카카오 블라인드 테스트
 
-한번 적어보고 있습니다!!  
-잘 작동하나요??  
-어디서인가 CSS가 안 먹히는것 같습니다만...?  
-Whisper is a minimal documentation theme for Hugo. The design and functionality is intentionally minimal. We’re aiming for a similar feel to a Github readme.
+블라인드 코딩 테스트 문제입니다.
