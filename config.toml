@@ -1,57 +1,69 @@
-baseURL = "https://lameld.github.io/"
-languageCode = "UTF-8"
-title = "LaMelD's Dev Life"
+baseURL = ""
+languageCode = "en-us"
+title = "LaMelD's dev Story"
 
-canonifyurls = true
-paginate = 6
-
-# 요약 정보의 길이를 조절할 수 있다
-summaryLength = 40
-
-googleAnalytics = "UA-153078485-1"
-disqusShortname = ""
-
-SectionPagesMenu = "main"
-
-# use Chroma for syntax highlight
-pygmentsStyle = "native" # other dark style options: vim, fruity, monokai
-
-# enable syntax highlight for code blocks
 pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+# Controls how many words are printed in the content summary on the docs homepage.
+# See https://gohugo.io/content-management/summaries/
+summaryLength = 30
 
 [[menu.main]]
-	name = "Posts"
-	weight = -130
-	identifier = "post"
-	url = "/post/"
-  
-[[menu.main]]
-	name = "Category"
-	weight = -120
-	identifier = "categories"
-	url = "/categories/"
+    name = "Home"
+    url = "/"
+    weight = 1
 
 [[menu.main]]
-	name = "Tags"
-	weight = -110
-	identifier = "tag"
-	url = "/tags/"
+    name = "Docs"
+    url = "/docs/"
+    weight = 2
 
-[taxonomies]
-	category = "categories"
-	group = "groups"
-	series = "series"
-	tag = "tags"
+[[menu.main]]
+    name = "Kakao"
+    url = "/kakao/"
+    weight = 3
 
-[author]
-	name = "LaMelD"
+[[menu.main]]
+    name = "Swea"
+    url = "/swea/"
+    weight = 4
 
-[params.meta]
-	keywords = ""
-	description = "Personal blog."
+[[menu.main]]
+    name = "Study"
+    url = "/study/"
+    weight = 5
 
 [params]
-	email = "wqe014@gmail.com"
-	github = "lameld"
-	instagram = "sangjoooooooooooon"
-	theme_colors = "default-dark"
+  google_analytics_id=""
+  homepage_button_link_docs = '/docs'
+  homepage_button_text_docs = '디폴트로 있던 버튼'
+  homepage_button_link_kakao = '/kakao'
+  homepage_button_text_kakao = 'kakao 문제 풀이'
+  homepage_button_link_swea = '/swea'
+  homepage_button_text_swea = 'SWexpertAcademy 문제 풀이'
+  homepage_button_link_study = '/study'
+  homepage_button_text_study = 'Study 자료'
+  homepage_intro = '이 블로그의 설명을 담겠습니다.'
+  homepage_image = '/images/terminal.gif'
+  # 폴더를 추가하려면 아래에 등록하세요
+  mainSections = ['docs', 'kakao', 'swea', 'study']
+
+  ## You can enable to add anchor links to header elements
+  # enable_anchor_link = true
+
+  [params.homepage_meta_tags]
+    meta_description = "Hugo Whisper is a documentation theme built with Hugo."
+    meta_og_title = "Hugo Whisper Theme"
+    meta_og_type = "website"
+    meta_og_url = "https://hugo-whisper.netlify.com"
+    meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png"
+    meta_og_description = "Hugo Whisper is a documentation theme built with Hugo."
+    meta_twitter_card = "summary"
+    meta_twitter_site = "@zerostaticio"
+    meta_twitter_creator = "@zerostaticio"
+
+  [params.logo]
+      mobile = "/images/logo-mobile.svg"
+      standard  = "/images/logo.svg"

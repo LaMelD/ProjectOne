@@ -1,30 +1,12 @@
-<!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-
-{{ partial "head.html" . }}
-
-<body>
-
-<!-- favicon test <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
-
-<div class="main">
-<header>
-
-<div class="header-bar">
-
-  <nav>
-    <div class="siteTitle">
-      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-    </div> <!--siteTitle-->
-
-    {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
-    <a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}"><div class="nav-item-title">{{ .Name }}</div></a>
-    {{ end }}
-
-  </nav>
-    
+<div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="{{ .Site.BaseURL }}"><img alt="Logo" src="{{ .Site.Params.logo.standard | relURL }}" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="{{ .Site.BaseURL }}"><img alt="Logo" src="{{ .Site.Params.logo.mobile | relURL }}" /></a>
+    </div>
+    {{ partial "main-menu.html" . }}
+    {{ partial "hamburger.html" . }}
+  </div>
 </div>
-
-
-</header>

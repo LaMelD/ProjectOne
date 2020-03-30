@@ -1,11 +1,11 @@
-{{ partial "header.html" . }}
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-default-single{{ end }}
+{{ define "header_classes" }}{{ end }}
 
-<article class="post">
-    <h1 class="title"> {{ .Title }} </h1>
-    {{ partial "tags.html" . }}
-    
-    <div class="content"> {{ .Content }} </div>
-    {{ partial "postfooter.html" . }}
-</article>
-
-{{ partial "footer.html" . }}
+{{ define "main" }}
+<h1 class="title">{{.Title}}</h1>
+<div class="content {{if .Site.Params.enable_anchor_link}}{{ "anchor-link-enabled" }}{{ end }}">
+  {{.Content}}
+</div>
+</div>
+{{ end }}

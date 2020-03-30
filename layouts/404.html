@@ -1,17 +1,13 @@
-{{ partial "header.html" . }}
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}{{ end }}
+{{ define "header_classes" }}{{ end }}
 
-<div class="err-404" >
-    <h1 id="title">{{ .Title }} :(</h1>
+{{ define "main" }}
+<div class="container pt-4 pt-10">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-9">
+      <h1>404 Page Not Found</h1>
+    </div>
+  </div>
 </div>
-
-<div class="sitemap" >
-  <ul>
-  {{ range site.RegularPages.ByLastmod.Reverse }}
-      <li><article itemscope itemtype="http://schema.org/Blog">
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </article></li>
-  {{ end }}
-  </ul>
-
-</div> <!-- sitemap -->
-{{ partial "footer.html" . }}
+{{ end }}
