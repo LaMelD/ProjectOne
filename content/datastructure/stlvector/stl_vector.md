@@ -1,15 +1,7 @@
 ---
-author: "LaMelD"
 title: "[C++ STL] Vector"
 date: 2019-11-16T20:08:14+09:00
-tags : [
-    "c++ stl",
-    "vector",
-]
-categories : [
-    "c++ stl",
-]
-linktitle: C++ STL Vector
+weight: 7
 ---
 
 <h1>C++ STL Vector</h1>

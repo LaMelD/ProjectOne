@@ -1,15 +1,7 @@
 ---
-author: "LaMelD"
 title: "[C++ STL] Queue"
 date: 2019-11-16T20:08:14+09:00
-tags : [
-    "c++ stl",
-    "queue",
-]
-categories : [
-    "c++ stl",
-]
-linktitle: C++ STL Queue
+weight: 6
 ---
 
 # C++ STL Queue

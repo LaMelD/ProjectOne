@@ -1,16 +1,7 @@
 ---
-author: "LaMelD"
-title: "[Data Structure] Array"
+title: "[DS] Array"
 date: "2019-11-15"
-tags : [
-    "c++",
-    "data structure",
-    "array",
-]
-categories : [
-    "data structure",
-]
-linktitle: Data Structure Array
+weight: 2
 ---
 
 # Array(배열)
@@ -18,19 +9,19 @@ linktitle: Data Structure Array
 	- 기본적인 배열을 의미한다.
 	- C++에서 간단하게 선언이 가능하다.
 	
->1차원
+- 1차원
 ```cpp
 int arr0[3];
 int arr1[10] = { 0, };
 int arr2 = { 1,2,3,4 };
 ```
->2차원
+- 2차원
 ```cpp
 int arr0[3][7];
 int arr1[10][10] = { { 0, }, };
 int arr2 = { { 1,2}, { 3,4 } };
 ```
->3차원 이상의 배열도 [ ]를 추가하여 선언이 가능하다.
+- 3차원 이상의 배열도 [ ]를 추가하여 선언이 가능하다.
 
 ---
 
@@ -41,7 +32,7 @@ int arr2 = { { 1,2}, { 3,4 } };
 	
 ![IMAGE](/images/array11.png)
 	
->포인터(*)와 new 또는 malloc(cstring 라이브러리)을 사용
+- 포인터(*)와 new 또는 malloc(cstring 라이브러리)을 사용
 ```cpp
 int size = 27;
 
@@ -81,7 +72,7 @@ memset(arr2, 0, sizeof(int) * size);
 	- set : [ idx ]의 데이터를 input으로 수정한다.
 	- at : [ idx ]의 데이터를 가져온다.
 
->myArray 클래스
+- myArray 클래스
 ```cpp
 #include <iostream>
 #include <cstring>
@@ -178,10 +169,9 @@ int myArray<T>::size()
 }
 ```
 	
-- C++에서는 위의 클래스를 최적화시켜 STL을 지원한다. [ [C++ STL vector](/post/stl_vector "/post/stl_vector") ]
+- C++에서는 위의 클래스를 최적화시켜 STL을 지원한다.
 
->C++ STL vector
-vector를 사용하여 여러가지 동작이 가능하다. 자세한 내용은 추후에 [ [C++ STL vector](/post/stl_vector "/post/stl_vector") ]에서 다루겠습니다. 아래에는 사용하는 예시를 넣었습니다.
+- C++ STL vector
 ```cpp
 vector<int> arr1;
 vector<int> arr2(12);

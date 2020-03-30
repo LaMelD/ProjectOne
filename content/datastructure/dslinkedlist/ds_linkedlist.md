@@ -1,16 +1,7 @@
 ---
-author: "LaMelD"
 title: "[Data Structure] Single Linked List"
 date: "2019-11-15"
-tags : [
-    "c++",
-    "data structure",
-    "linked list",
-]
-categories : [
-    "data structure",
-]
-linktitle: Data Structure Single Linked List
+weight: 3
 ---
 
 # Single Linked List (단순 연결 리스트)
@@ -33,7 +24,7 @@ linktitle: Data Structure Single Linked List
 		- getNext() : 현재 노드의 다음 노드를 리턴한다.
 		- setNext() : 현재 노드의 다음 노드를 설정한다.
 
->
+
 ```cpp
 template <class T>
 class Node
@@ -63,7 +54,7 @@ Node<T>::Node(T n)
 }
 ```
 
-<br>
+
 
 - Node가 들어갈 List의 틀(class)을(를) 생성하고 필요한 기능과 멤버 변수를 추가해줍니다.
 	- private 멤버 변수
@@ -77,7 +68,7 @@ Node<T>::Node(T n)
 		- getHead() : List의 가장 앞 부분을 알려주는 phead를 리턴한다
 		- getData(), AddFront(), AddBack(), InsertNode(), DeleteNode()
 		
->
+
 ```cpp
 template <class T>
 class SingleLinkedList
@@ -99,11 +90,11 @@ public:
 };
 ```
 
-<br>
+
 
 - 멤버 함수 상세 내용
 
->getData(int n) : phead부터 n번째 data를 리턴한다.
+- getData(int n) : phead부터 n번째 data를 리턴한다.
 ```cpp
 template <class T>
 T SingleLinkedList<T>::getValue(int n)
@@ -117,7 +108,7 @@ T SingleLinkedList<T>::getValue(int n)
 	return tmp->getData();
 }
 ```
->AddFront(T n) : List의 맨 앞에 추가한다.
+- AddFront(T n) : List의 맨 앞에 추가한다.
 ```cpp
 template <class T>
 void SingleLinkedList<T>::AddFront(T n)
@@ -137,7 +128,7 @@ void SingleLinkedList<T>::AddFront(T n)
 		this->phead = tmp;
 	}
 ```
->AddBack(T n) : List의 맨 뒤에 추가한다
+- AddBack(T n) : List의 맨 뒤에 추가한다
 ```cpp
 template <class T>
 void SingleLinkedList<T>::AddBack(T n)
@@ -158,7 +149,7 @@ void SingleLinkedList<T>::AddBack(T n)
 	}
 }
 ```
->InsertNode(Node\<T\>* prev, T n) : prev 노드 뒤에 n의 value를 갖는 노드를 추가한다.
+- InsertNode(Node\<T\>* prev, T n) : prev 노드 뒤에 n의 value를 갖는 노드를 추가한다.
 ```cpp
 template <class T>
 void SingleLinkedList<T>::InsertNode(Node<T>* previous, T n)
@@ -171,7 +162,7 @@ void SingleLinkedList<T>::InsertNode(Node<T>* previous, T n)
 	previous->setNext(tmp);
 }
 ```
->DeleteNode(int n) : phead부터 n번째 인덱스의 다음 node를 삭제한다.
+- DeleteNode(int n) : phead부터 n번째 인덱스의 다음 node를 삭제한다.
 ```cpp
 template <class T>
 void SingleLinkedList<T>::DeleteNode(int n)
@@ -211,10 +202,8 @@ void SingleLinkedList<T>::DeleteNode(int n)
 }
 ```
 
-<br>
-- 전체 코드
 
->
+- 전체 코드
 ```cpp
 #include <iostream>
 
@@ -410,7 +399,7 @@ int main()
 	cout << '\n';
 }
 ```
->출력  
+- 출력  
 ```txt
 2, 3, 9, 10을 앞에 추가하고, 4, 5, 6, 7, 8을 뒤에 추가한 결과 : 8 7 6 5 4 2 3 9 10
 앞에서 3번째 인덱스 뒤에 150을 추가한다

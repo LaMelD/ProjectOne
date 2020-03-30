@@ -1,16 +1,7 @@
 ---
-author: "LaMelD"
 title: "[Data Structure] Stack"
 date: "2019-11-15"
-tags : [
-    "c++",
-    "data structure",
-    "stack",
-]
-categories : [
-    "data structure",
-]
-linktitle: Data Structure Stack
+weight: 5
 ---
 
 # Stack(스택)

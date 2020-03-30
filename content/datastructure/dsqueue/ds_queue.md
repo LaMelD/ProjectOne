@@ -1,16 +1,7 @@
 ---
-author: "LaMelD"
-title: "[Data Structure] Queue"
+title: "[DS] Queue"
 date: "2019-11-15"
-tags : [
-    "c++",
-    "data structure",
-    "queue",
-]
-categories : [
-    "data structure",
-]
-linktitle: Data Structure Queue
+weight: 4
 ---
 
 # Queue(큐)
@@ -23,21 +14,21 @@ linktitle: Data Structure Queue
 
 ![IMAGE](/images/queue1.png)
 
->1. 선형 큐(Linear Queue)<br>
-선형 큐는 큐의 가장 단순한 형태로써, 큐의 가장 앞을 가리키는 front와 가장 뒤를 가리키는 rear를 갖는다. 자료를 추가하면, 현재 rear가 가리키는 위치에 자료를 추가하고, rear는 1만큼 증가한다. 자료를 꺼내면, 현재 front가 가리키는 위치의 자료를 꺼내고 front는 1만큼 증가한다.<br>
+- 선형 큐(Linear Queue)
+	- 선형 큐는 큐의 가장 단순한 형태로써, 큐의 가장 앞을 가리키는 front와 가장 뒤를 가리키는 rear를 갖는다. 자료를 추가하면, 현재 rear가 가리키는 위치에 자료를 추가하고, rear는 1만큼 증가한다. 자료를 꺼내면, 현재 front가 가리키는 위치의 자료를 꺼내고 front는 1만큼 증가한다.
 
 
-<img src="/images/queue2.png">
+![](/images/queue2.png)
 
->2. 환영 큐(Circular Queue)
-환영 큐는 선형 큐에서 pop 연산이 반복될 수록 큐에 저장할 수 있는 공간이 감소하는 문제점을 극복하기 위해 고안되었다. 기존의 선형 큐를 원형으로 구성한 새로운 형태의 큐를 이용한다. 환형 큐의 구조는 아래와 같다.
+- 환영 큐(Circular Queue)
+	- 환영 큐는 선형 큐에서 pop 연산이 반복될 수록 큐에 저장할 수 있는 공간이 감소하는 문제점을 극복하기 위해 고안되었다. 기존의 선형 큐를 원형으로 구성한 새로운 형태의 큐를 이용한다. 환형 큐의 구조는 아래와 같다.
 
-<img src="/images/queue3.png">
+![](/images/queue3.png)
 
-<hr>
+---
 ### 2. 구현 : Circular Queue
 
->
+
 ```
 #include <iostream>
 #include <cstring>
