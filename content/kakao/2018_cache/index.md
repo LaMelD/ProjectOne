@@ -6,7 +6,7 @@ weight: 2
 
 <h1>카카오 블라인드 테스트 2018 - 캐시</h1>
 
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/17680">https://programmers.co.kr/learn/courses/30/lessons/17680</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/17680)
 
 - 문제 설명
 	1. 캐시 교체 알고리즘은 `LRU(Least Recently Used)` 를 사용한다.
