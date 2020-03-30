@@ -1,21 +1,10 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2020] 외벽 점검"
+title: "[2020] 외벽 점검"
 date: 2019-11-27T11:22:33+09:00
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2020",
-]
-categories : [
-    "Kakao Blind 2020",
-]
-linktitle: Kakao Blind 2020 Circular
+weight: 16
 ---
 
-<h1>카카오 블라인드 테스트 2020 - 외벽 점검</h1>
-
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/60062">https://programmers.co.kr/learn/courses/30/lessons/60062</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/60062)
 
 - 문제 설명
 	- 외벽이 원형으로 이루어진 레스토랑의 외벽을 점검한다.
@@ -27,24 +16,20 @@ linktitle: Kakao Blind 2020 Circular
 	- 취약점의 최대 갯수는 15곳이다.
 	- 모든 인원을 투입해도 취약점을 전부 점검할 수 없을 경우 -1을 리턴한다.
 	
-- 예제
+- 예시
 
->1. n = 12, weak = { 1, 5, 6, 10 }, dist = { 1, 2, 3, 4 }
-```
-1. 4m를 이동할 수 있는 인원은 10m 지점에서 출발하여 시계방향으로 돌아 1m 위치에 있는 취약 지점에서 외벽 점검을 마친다.
-2. 2m를 이동할 수 있는 인원은 4.5m 지점에서 출발하여 6.5지점에서 외벽 점검을 마친다.
-
+>1. n = 12, weak = { 1, 5, 6, 10 }, dist = { 1, 2, 3, 4 }  
+1. 4m를 이동할 수 있는 인원은 10m 지점에서 출발하여 시계방향으로 돌아 1m 위치에 있는 취약 지점에서 외벽 점검을 마친다.  
+2. 2m를 이동할 수 있는 인원은 4.5m 지점에서 출발하여 6.5지점에서 외벽 점검을 마친다.  
 이 외의 여러 방법이 있지만, 두 명보다 적은 인원을 투입하는 방법은 없다. 따라서 친구를 최소 두 명 투입해야 한다.
-```
-<img src="/images/circular1.jpg" width=50% height=50%>
 
->2. n = 12, weak = { 1, 3, 4, 9, 10 }, dist = { 3, 5, 7 }
-```
-1. 7m를 이동할 수 있는 인원이 4m 지점에서 출발하여 반시계 방향으로 점검을 돌면 모든 취약 지점을 점검할 수 있다.
+![](/images/circular1.jpg)
 
+>2. n = 12, weak = { 1, 3, 4, 9, 10 }, dist = { 3, 5, 7 }  
+1. 7m를 이동할 수 있는 인원이 4m 지점에서 출발하여 반시계 방향으로 점검을 돌면 모든 취약 지점을 점검할 수 있다.  
 따라서 인원을 최소 한 명 투입하면 된다.
-```
-<img src="/images/circular2.jpg" width=50% height=50%>
+
+![](/images/circular2.jpg)
 
 - 문제 풀이
 	1. dist 배열을 내림차순으로 정렬한다.(많은 지역을 커버할 수 있는 인원을 우선으로한다)
@@ -57,8 +42,7 @@ linktitle: Kakao Blind 2020 Circular
 	5. 모든 취약점이 커버될 수 있다면 answer값을 갱신해준다.
 	6. 모든 경우를 진행했지만 answer값에 변화가 없다면 -1을 리턴한다.
 	
->Code
-```
+```cpp
 #include <algorithm>
 #include <string>
 #include <vector>

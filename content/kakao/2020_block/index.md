@@ -1,21 +1,10 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2020] 블록 이동하기"
+title: "[2020] 블록 이동하기"
 date: 2019-11-27T11:22:43+09:00
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2020",
-]
-categories : [
-    "Kakao Blind 2020",
-]
-linktitle: Kakao Blind 2020 Block
+weight: 15
 ---
 
-# 카카오 블라인드 테스트 2020 - 블록 이동하기
-
-[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/60063 "https://programmers.co.kr/learn/courses/30/lessons/60063")
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/60063)
 
 - 문제 설명
 	- 아래의 왼쪽과 같이 board의 정보가 input으로 주어진다.
@@ -26,14 +15,14 @@ linktitle: Kakao Blind 2020 Block
 	- 로봇이 한칸 이동할 때 걸리는 시간은 1초이다.
 	- 90도 회전할 때 1초가 소요된다.
 
-<img src="/images/moveblock1.jpg" width=80% height=80%>
+![](/images/moveblock1.jpg)
 
 - 문제 풀이
 	- 기본적으로 탐색알고리즘은 다익스트라 알고리즘을 사용한다.
 	- Memoization을 하기 위한 배열 visit을 생성한다
 	
-	>visit :: node
-	```
+	- visit :: node
+	```cpp
 	struct node
 	{
 		node() : left(false), right(false), top(false), bottom(false) {}
@@ -48,8 +37,8 @@ linktitle: Kakao Blind 2020 Block
 		bool bottom;
 	};
 	```
-	>visit :: 검색
-	```
+	- visit :: 검색
+	```cpp
 	//로봇이 가로로 있을 경우
 	if (pos.p1.x == pos.p2.x)
 	{
@@ -81,8 +70,7 @@ linktitle: Kakao Blind 2020 Block
 	- 좌표를 저장하기 위한 point와 pointset 구조체를 만든다.
 	- 시작 좌표를 기준으로 이동가능한 모든 좌표를 queue에 저장하고, 순차적으로 이동시켜 나아가 최적의 값을 구한다.
 	
->Code
-```
+```cpp
 #include <string>
 #include <vector>
 #include <queue>

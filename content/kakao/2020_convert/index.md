@@ -1,21 +1,10 @@
 ---
-author: "LaMelD"
-title: "[Programmers][Kakao Blind 2020] 괄호 변환"
+title: "[2020] 괄호 변환"
 date: 2019-11-27T11:21:17+09:00
-tags : [
-    "c++",
-    "programmers",
-    "kakao blind 2020",
-]
-categories : [
-    "Kakao Blind 2020",
-]
-linktitle: Kakao Blind 2020 Convert
+weight: 17
 ---
 
-<h1>카카오 블라인드 테스트 2020 - 괄호 변환</h1>
-
-문제 출처 : <a href="https://programmers.co.kr/learn/courses/30/lessons/60058">https://programmers.co.kr/learn/courses/30/lessons/60058</a>
+[문제 출처](https://programmers.co.kr/learn/courses/30/lessons/60058)
 
 - 문제 설명
 	- 균형잡힌 괄호 문자열 : '('의 개수와 ')'의 개수가 같다.
@@ -23,8 +12,8 @@ linktitle: Kakao Blind 2020 Convert
 	- 해당 문제에서 제시된 설명은 다음과 같다.
 
 >
-1. 입력이 빈 문자열인 경우, 빈 문자열을 반환합니다. 
-2. 문자열 w를 두 "균형잡힌 괄호 문자열" u, v로 분리합니다. 단, u는 "균형잡힌 괄호 문자열"로 더 이상 분리할 수 없어야 하며, v는 빈 문자열이 될 수 있습니다. 
+1. 입력이 빈 문자열인 경우, 빈 문자열을 반환합니다.<br>
+2. 문자열 w를 두 "균형잡힌 괄호 문자열" u, v로 분리합니다. 단, u는 "균형잡힌 괄호 문자열"로 더 이상 분리할 수 없어야 하며, v는 빈 문자열이 될 수 있습니다.<br>
 3. 문자열 u가 "올바른 괄호 문자열" 이라면 문자열 v에 대해 1단계부터 다시 수행합니다.<br>
 	3-1. 수행한 결과 문자열을 u에 이어 붙인 후 반환합니다. 
 4. 문자열 u가 "올바른 괄호 문자열"이 아니라면 아래 과정을 수행합니다.<br> 
@@ -32,12 +21,11 @@ linktitle: Kakao Blind 2020 Convert
 	4-2. 문자열 v에 대해 1단계부터 재귀적으로 수행한 결과 문자열을 이어 붙입니다.<br>
 	4-3. ')'를 다시 붙입니다.<br>
 	4-4. u의 첫 번째와 마지막 문자를 제거하고, 나머지 문자열의 괄호 방향을 뒤집어서 뒤에 붙입니다.<br>
-	4-5. 생성된 문자열을 반환합니다.<br>
+	4-5. 생성된 문자열을 반환합니다.
 
 - 문제 풀이 : 문제에 제시되어 있는 설명을 참고하여 순차적으로 적용하면 된다.
 
->Code
-```
+```cpp
 #include <string>
 #include <vector>
 
