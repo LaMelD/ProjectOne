@@ -8,10 +8,14 @@ weight: 4
 
 - 같은 모양의 카카오프렌즈 블록이 2×2 형태로 4개가 붙어있을 경우 사라지면서 점수를 얻는 게임이다.
 
-![](/images/friend4block1.png")  
-![](/images/friend4block2.png")  
-![](/images/friend4block3.png")  
+![](/images/friend4block1.png")
+
+![](/images/friend4block2.png")
+
+![](/images/friend4block3.png")
+
 ![](/images/friend4block4.png")
+
 - 풀이
 	1. 왼쪽 상단부터 오른쪽 하단까지 지울 수 2x2 형태로 4개가 붙어있는 경우를 탐색한다.
 	2. 2x2 형태로 4개가 붙어있는 경우가 존재한다면 해당 블록들을 비워주고, 비워진 부분을 위쪽에 블록을 내려 채워주고 1번부터 다시 실행한다. 2x2형태로 4개가 붙어 있는 경우가 없다면 다음 단계로 넘어간다.
