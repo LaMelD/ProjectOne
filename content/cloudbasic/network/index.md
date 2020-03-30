@@ -1,28 +1,10 @@
 ---
-author: "LaMelD"
-title: "[CLOUD] Network"
+title: "Network"
 date: 2019-12-31T13:23:21+09:00
-tags : [
-	cloud,
-	study_network
-]
-categories : [
-	cloud,
-	study_network
-]
-linktitle: Network
+weight: 2
 ---
-<!-- mark down : https://heropy.blog/2017/09/30/markdown/ -->
-<!--- make table
-|r|g|b|
-|---|:---:|---:|
---->
-# 네트워크  
-### 191230 Monday ~ 200103 Friday
 
-berryz web share ip :: http://192.168.0.100 (사설 IP)  
-berryz web share ip :: http://121.140.73.126 (공인 IP)  
-복습 :: http://www.ddarahakit.kro.kr -> kro.kr 도메인은 무료?
+### 191230 Monday ~ 200103 Friday
 
 -----
 

@@ -1,19 +1,9 @@
 ---
-author: "LaMelD"
-title: "[CLOUD] Hardware Linux Basic"
+title: "Linux Basic"
 date: 2020-01-13T10:31:27+09:00
-tags : [
-    cloud,
-	study_hardware
-]
-categories : [
-    cloud,
-	study_hardware
-]
-linktitle: Hardware
+weight: 4
 ---
 
-# HW운영관리 :: Linux 기초
 ### 200116 Thurday ~ 200116 Thursday
 
 ---

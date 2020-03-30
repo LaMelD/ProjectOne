@@ -1,24 +1,10 @@
 ---
-author: "LaMelD"
-title: "[CLOUD] Network Device"
+title: "Network Device"
 date: 2020-01-06T09:34:37+09:00
-tags : [
-    cloud,
-	study_network
-]
-categories : [
-    cloud,
-	study_network
-]
-linktitle: Network Device
+weight: 3
 ---
 
-# 네트워크 장비
 ### 200106 Monday ~ 200110 Friday
-
-berryz web share ip :: http://192.168.0.100 (사설 IP)  
-berryz web share ip :: http://121.140.73.126 (공인 IP)  
-복습 :: http://www.ddarahakit.kro.kr
 
 -----
 
