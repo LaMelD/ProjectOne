@@ -35,14 +35,19 @@ summaryLength = 30
     url = "/cloudbasic/"
     weight = 5
 
+[[menu.main]]
+name = "Git&Github"
+url = "/gitstudy/"
+weight = 6
+
 [params]
   google_analytics_id=""
   homepage_button_link_kakao = '/kakao'
   homepage_button_text_kakao = 'kakao 문제 풀이'
   homepage_button_link_swea = '/swea'
   homepage_button_text_swea = 'SWexpertAcademy 문제 풀이'
-  homepage_button_link_study = '/study'
-  homepage_button_text_study = 'Study 자료'
+  homepage_button_link_gitstudy = '/gitstudy'
+  homepage_button_text_gitstudy = 'Git&Github'
   homepage_button_link_datastructure = '/datastructure'
   homepage_button_text_datastructure = '자료구조'
   homepage_button_link_cloudbasic = '/cloudbasic'
