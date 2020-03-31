@@ -61,15 +61,15 @@ weight = 6
   # enable_anchor_link = true
 
   [params.homepage_meta_tags]
-    meta_description = "Hugo Whisper is a documentation theme built with Hugo."
-    meta_og_title = "Hugo Whisper Theme"
+    meta_description = "Hugo"
+    meta_og_title = "Hugo"
     meta_og_type = "website"
-    meta_og_url = "https://hugo-whisper.netlify.com"
+    meta_og_url = "https://lameld.github.io"
     meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png"
-    meta_og_description = "Hugo Whisper is a documentation theme built with Hugo."
+    meta_og_description = "LaMelD"
     meta_twitter_card = "summary"
-    meta_twitter_site = "@zerostaticio"
-    meta_twitter_creator = "@zerostaticio"
+    meta_twitter_site = "@"
+    meta_twitter_creator = "@"
 
   [params.logo]
       mobile = "/images/logo-mobile.svg"
