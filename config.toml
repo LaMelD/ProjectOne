@@ -55,7 +55,7 @@ weight = 6
   homepage_intro = '이 블로그의 설명을 담겠습니다.'
   homepage_image = '/images/terminal.gif'
   # 폴더를 추가하려면 아래에 등록하세요
-  mainSections = ['kakao', 'swea', 'study', 'datastructure', 'cloudbasic']
+  mainSections = ['kakao', 'swea', 'gitstudy', 'datastructure', 'cloudbasic']
 
   ## You can enable to add anchor links to header elements
   # enable_anchor_link = true
