@@ -116,7 +116,7 @@ weight: 4
     f = open("파일이름", '모드')
     ```
 
-    ![filemode](../images/filemode.PNG)
+    ![filemode](/images/filemode.PNG)
     - r : readonly  : 읽기 전용, 없으면 에러, 쓸 수 없다.
     - w : writeonly : 쓰기 전용, 없으면 생성, 존재하면 내용 삭제 후 작성
     - a : readwrite : 읽기 쓰기, 없으면 생성, 원래 있던 내용에 추가할 수 있다.
@@ -153,4 +153,4 @@ weight: 4
         print(i)
     ```
 
-    ![args](../images/args.PNG)
+    ![args](/images/args.PNG)

@@ -155,7 +155,7 @@ weight: 5
     a + b
     ```
 
-    ![operator](../images/operator.PNG)
+    ![operator](/images/operator.PNG)
 
 -----
 
@@ -217,13 +217,13 @@ weight: 5
     - 도트(.)를 이용하여 파이썬 모듈을 계층적(디렉토리 구조)으로 관리할 수 있게 해준다.
     - 파이썬 패키지는 디렉토리와 파이썬 모듈로 이루어진다.
     
-    ![패키지 구조](../images/package.PNG)
+    ![패키지 구조](/images/package.PNG)
     - 패키지 구조로 파이썬 프로그램을 만드는 것이 공동작업이나 유지보수 등 여러 면에서 유리하다.
     - 패키지 구조로 모듈을 만들면 다른 모듈과 이름이 겹치더라도 더 안전하게 사용할 수 있다.
 - 패키지 만들기
     - 패키지 기본 구성 요소 준비하기
         
-        ![기본 구성 요소](../images/package_basic.PNG)
+        ![기본 구성 요소](/images/package_basic.PNG)
         - `__init__.py`는 비어있는 상태로 둔다.
         ```python
         # echo.py
@@ -237,7 +237,7 @@ weight: 5
         ```
         - PYTHONPATH 환경변수에 등록한다.
 
-        ![환경변수 등록](../images/python_env.PNG)
+        ![환경변수 등록](/images/python_env.PNG)
 - 패키지 안의 함수 실행하기
     ```python
     # echo 모듈을 import하여 실행
@@ -274,7 +274,7 @@ weight: 5
     ```
     - 특정 디렉토리의 모듈을 *를 이용하여 import할 때에는 다음과 같이 해당 디렉토리의 `__init__`파일에 `__all__`이라는 변수를 설정하고 import할 수 있는 모듈을 정의해 주어야한다.
 
-    ![__init__](../images/init_all.PNG)
+    ![__init__](/images/init_all.PNG)
 - relative 패키지
     - 만약 graphic 디렉토리의 render.py 모듈일 sound 디렉토리의 echo.py 모듈을 사용하고 싶다면 render.py를 다음과 같이 수정한다.
     ```python
@@ -549,7 +549,7 @@ p251
     - time.ctime
     - time.strftime
     
-    ![Time format](../images/time_format.PNG)
+    ![Time format](/images/time_format.PNG)
     - time.sleep
 - calendar 모듈
     - 달력과 관련된 모듈

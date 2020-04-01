@@ -45,26 +45,26 @@ print(pat.sub("\g<1>-*******", data))
 - 문자 클래스 `[ ]`
     - `[와 ] 사이의 문자들과 매치`
 
-    ![문자 클래스](../images/char_class.PNG)
+    ![문자 클래스](/images/char_class.PNG)
     - 두 문자 사이에 하이픈(-)을 사용하게 되면 두 문자 사이의 범위를 의미함.
     - 하나의 문자라도 같은게 있다면 매치된다.
     - ^은 not을 의미한다. : `[^0-9]`은 숫자가 아닌 문자만 매치된다.
 
-    ![자주 사용하는 문자 클래스](../images/useful_char_class.PNG)
+    ![자주 사용하는 문자 클래스](/images/useful_char_class.PNG)
 - Dot(.)
     - 정규 표현식의 Dot(.) 메타 문자는 줄바꿈 문자인 \n을 제외한 모든 문자와 매치됨을 의미한다.
     - `a.b` : a와 b사이에 줄바굼 문자를 제외한 어떤 문자가 들어가도 매치됨.
     
-    ![Dot](../images/dot.PNG)
+    ![Dot](/images/dot.PNG)
     - `a[.]b` : a와 b 사이에 Dot(.) 문자가 있으면 매치
 - 반복(*)
     - `ca*t` : a가 0번이상 반복되면 매치
     
-    ![반복](../images/star.PNG)
+    ![반복](/images/star.PNG)
 - 반복(+)
     - `ca+t` : a가 1번 이상 반복되면 매치
 
-    ![반복](../images/plus.PNG)
+    ![반복](/images/plus.PNG)
 - 반복({m, n}, ?)
     - `ca{2}t` : a가 2번 반복되면 매치
     - `cat{2,5}t` : a가 2번이상 5번이하로 반복되면 매치
@@ -72,7 +72,7 @@ print(pat.sub("\g<1>-*******", data))
 - 파이썬에서 정규 표현식을 지원하는 모듈 : re 모듈
     - `import re`
     
-    ![문자열 검색](../images/re_method.PNG)
+    ![문자열 검색](/images/re_method.PNG)
     - match
         - 문자열의 처음부터 정규식과 매치되는지 조사한다.
         ```python
@@ -94,7 +94,7 @@ print(pat.sub("\g<1>-*******", data))
         - match 객체를 반환한다.
     - match 객체의 메서드
 
-        ![match](../images/match_method.PNG)
+        ![match](/images/match_method.PNG)
     - search
         - 문자열 전체를 검색하기 때문에 '3 python'에서 'python'과 매치된다.
     - findall
@@ -111,7 +111,7 @@ print(pat.sub("\g<1>-*******", data))
         ```
 - 컴파일 옵션
     
-    ![컴파일 옵션](../images/compile_option.PNG)
+    ![컴파일 옵션](/images/compile_option.PNG)
 - 백슬레쉬 문제
     - 정규 표현식을 파이썬에서 혼란을 주는 요소 : 백슬래쉬
     - "\\section"을 찾을 때 `p = re.compile('\\section')`을 사용해야 한다.
@@ -144,7 +144,7 @@ print(pat.sub("\g<1>-*******", data))
         - `(?P<이름>...)` 과 같이 이름을 붙일 수 있다.
     - 전방 탐색
 
-        ![전방 탐색](../images/front_search.PNG)
+        ![전방 탐색](/images/front_search.PNG)
         - 긍정형 전방 탐색
         - 부정형 전반 탐색
 - 문자열 바꾸기

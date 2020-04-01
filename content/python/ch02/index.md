@@ -19,17 +19,17 @@ weight: 3
         # 실행문
     ```
 
-    ![ifelif](../images/if_elif.PNG)
+    ![ifelif](/images/if_elif.PNG)
 - 조건문 : 참과 거짓을 판단하는 문장
 - 비교연산자 : 조건이 참인지 거짓인지 판단할 때 사용
 
-    ![비교연산자](../images/compare.PNG)
+    ![비교연산자](/images/compare.PNG)
 - 논리연산자 : 조건이 참인지 거짓인지 판단할 때 사용
 
-    ![논리연산자](../images/logical.PNG)
+    ![논리연산자](/images/logical.PNG)
 - x in s, x not in s
 
-    ![in, not in](../images/innotin.PNG)
+    ![in, not in](/images/innotin.PNG)
 - pass : 현재 조건문을 빠져나간다???
     ```python
     for i in range(10):
@@ -52,7 +52,7 @@ weight: 3
         ...
     ```
 
-    ![while flow](../images/while.PNG)
+    ![while flow](/images/while.PNG)
     ```python
     treeHit = 0
     while treeHit < 10:
