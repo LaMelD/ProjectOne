@@ -70,7 +70,7 @@ weight: 2
     ```
     - 문자열 포맷 코드
 
-        ![문자열 포맷 코드](../images/formatcode.PNG)
+        ![문자열 포맷 코드](/images/formatcode.PNG)
 
     - 정렬과 공백
        ```python
@@ -464,7 +464,7 @@ e = [1, 2,['Life', 'is']]
 
 - 자료형의 참과 거짓을 구분하는  기준
 
-    ![구분 기준](../images/truefalse.PNG)
+    ![구분 기준](/images/truefalse.PNG)
 
 - 반복문과 조건문에서 조건식의 참과 거짓을 판단할 때 쓰인다.
 
