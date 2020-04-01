@@ -40,6 +40,11 @@ name = "Git&Github"
 url = "/gitstudy/"
 weight = 6
 
+[[menu.main]]
+name = "Python"
+url = "/python/"
+weight = 7
+
 [params]
   google_analytics_id=""
   homepage_button_link_kakao = '/kakao'
@@ -52,10 +57,12 @@ weight = 6
   homepage_button_text_datastructure = '자료구조'
   homepage_button_link_cloudbasic = '/cloudbasic'
   homepage_button_text_cloudbasic = '클라우드 기초지식'
+  homepage_button_link_python = '/python'
+  homepage_button_text_python = '점프 투 파이썬'
   homepage_intro = '이 블로그의 설명을 담겠습니다.'
   homepage_image = '/images/terminal.gif'
   # 폴더를 추가하려면 아래에 등록하세요
-  mainSections = ['kakao', 'swea', 'gitstudy', 'datastructure', 'cloudbasic']
+  mainSections = ['kakao', 'swea', 'gitstudy', 'datastructure', 'cloudbasic', 'python']
 
   ## You can enable to add anchor links to header elements
   # enable_anchor_link = true
