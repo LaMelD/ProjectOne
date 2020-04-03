@@ -79,5 +79,5 @@ weight = 7
     meta_twitter_creator = "@"
 
   [params.logo]
-      mobile = "/images/logo-mobile.svg"
+      mobile = "/images/logo.png"
       standard  = "/images/logo.png"
